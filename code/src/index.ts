@@ -32,7 +32,7 @@ app.get("/quotes/random", (req: Request, res: Response) => {
 });
 
 app.get("/ping", (req: Request, res: Response) => {
-  return res.json({ pong: true, time: new Date().toISOString() });
+  return res.json({ pong: false, time: new Date().toISOString() });
 });
 
 app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
